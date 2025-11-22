@@ -31,3 +31,46 @@ table {
 body {
     padding-bottom: 40px;
 }
+
+
+/* Responsive icons */
+.action-icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: #333;
+    transition: 0.2s ease;
+}
+.action-icon:hover {
+    transform: scale(1.1);
+}
+@media (max-width: 480px) {
+    .action-icon {
+        font-size: 1.1rem;
+    }
+}
+
+/* Responsive table container */
+.table-responsive {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Mobile-friendly spacing */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    input, button {
+        font-size: 1rem !important;
+    }
+    .card {
+        padding: 1rem !important;
+    }
+    .container {
+        margin-top: 1rem;
+    }
+}
+
